@@ -3,6 +3,7 @@ An online petition. Features: registration, login, profile edit, signing up the 
 
 Technologies:
 Node with Express,
+Postgres,
 JavaScript,
 Handlebars,
 Canvas,
