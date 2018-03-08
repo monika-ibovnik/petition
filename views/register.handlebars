@@ -1,0 +1,26 @@
+<div class="container">
+    <h2>Register</h2>
+    <div class="content">
+        {{#if error}}
+            <p class="error">{{error}}</p>
+        {{/if}}
+        <form method="post">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <input class="text js-reg-info" name="firstname" id="firstname" type="text" required><br>
+            <label for="firstname">First name</label><br>
+            <input class="text js-reg-info" name="secondname" required><br>
+            <label for="secondname">Last name</label><br>
+            <input class="text js-reg-info" name="email" id="email" type="email"><br>
+            <label for="email">E-mail</label><br>
+            <input class="text" name="password" type="password"><br>
+            <label for="password">Password</label><br>
+            <input class="text" name="passwordRepeat" type="password"><br>
+            <label for="passwordRepeat">Repeat password</label>
+            <div class="button">
+                <input class="button-input" type="submit" value="Sign up">
+            </div>
+        </form>
+        <p id="please-login">Already registered? Please <a href="/login">sign in</a>.</p>
+    </div>
+</div>
+<script type="text/javascript" src="/script/register-script.js"></script>

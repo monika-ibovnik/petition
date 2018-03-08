@@ -1,0 +1,46 @@
+<div class="container">
+    <h2>Edit yout profile</h2>
+    <div class="content">
+        {{#if error}}
+            <p class="error">{{error}}</p>
+        {{/if}}
+        {{#if message}}
+            <p class="message">{{message}}</p>
+        {{/if}}
+        <form method="post">
+            <input type="hidden" name="_csrf" value="{{csrfToken}}">
+            <div class="parts-container">
+                <div id="userInfo" class="parts float-left">
+                    {{#userInfo}}
+                        <input id="firstname" class="text" name="firstname" type="text" value="{{firstname}}" disabled required><br>
+                        <label for="firstname">First name *</label><br>
+                        <input id="secondname" class="text" name="secondname" value="{{secondname}}" disabled required><br>
+                        <label for="secondname">Second name *</label><br>
+                        <input id="email" class="text" name="email" type="email" value="{{email}}" disabled required><br>
+                        <label for="email">E-mail *</label><br>
+                        <label for="profileCheckbox">Change basic user info</label><input id="profileCheckbox" type="checkbox">
+                        <div id="confirmPassword">
+                            <input id="password" class="text" type="password" name="password" placeholder="Confirm with your password..." disabled required><br>
+                            <label for="password">Password *</label><br>
+                            <a href="/changepass">Change password</a><br>
+                        </div>
+                    {{/userInfo}}
+                </div>
+                {{#profileInfo}}
+                    <div class="parts float-right">
+                        <input id="age" class="text" name="age" type="number" value="{{age}}"><br>
+                        <label for="age">Age</label><br>
+                        <input id="city" class="text" name="city" type="text" value="{{city}}"><br>
+                        <label for="city">City</label><br>
+                        <input id="homepage" class="text" name="homepage" type="url" value="{{homepage}}"><br>
+                        <label for="homepage">Homepage</label><br>
+                    </div>
+                {{/profileInfo}}
+            </div>
+            <div class="button">
+                <input class="button-input" type="submit" value="Save Changes">
+            </div>
+        </form>
+    </div>
+</div>
+<script type="text/javascript" src="/script/profile-script.js"></script>

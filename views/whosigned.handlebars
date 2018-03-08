@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Here is the list of our signers:</h2>
+    <div class="content align-center">
+        <div class="align-center">
+            <ul>
+                {{#each results}}
+                <li>{{#if homepage}}<a href="{{homepage}}">{{/if}}
+                    {{firstname}} {{secondname}}
+                    {{#if homepage}}</a>{{/if}}
+                    {{#if age}}
+                     ({{age}}{{#if city}}, {{/if}}{{#unless city}}){{/unless}}
+                    {{/if}}
+                    {{#if city}}{{#unless age}}({{/unless}}<a href='/whosigned/cities/{{city}}'>{{city}}</a>){{/if}}
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+</div>
