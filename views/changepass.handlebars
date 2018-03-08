@@ -1,0 +1,21 @@
+<h2>Change your password</h2>
+<div class="content align-center">
+    {{#if error}}
+        <p class="error">{{error}}</p>
+    {{/if}}
+    {{#if message}}
+        <p class="message">{{message}}</p>
+    {{/if}}
+    <form method="post">
+        <input type="hidden" name="_csrf" value="{{csrfToken}}">
+        <input class="text" id="currentPassword" name="password" type="password" required><br>
+        <label for="currentPassword">Current password</label><br>
+        <input class="text" id="newPassword" name="newPassword" type="password" required><br>
+        <label for="newPassword">New password</label><br>
+        <input class="text" id="repeatPassword" name="repeatPassword" type="password" required><br>
+        <label for="repeatPassword">Repeat new password</label><br>
+        <div class="button">
+            <input class="button-input" type="submit" value="Save the changes"><br>
+        </div>
+    </form>
+</div>

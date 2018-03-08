@@ -1,0 +1,292 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #003366;
+    position: relative;
+    background-image: url('/img/batman.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+}
+
+header h1{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    color: #011121;
+    font-size: 40px;
+    padding: 10px 0px 20px 0px;
+    text-shadow: 0px 0px 20px rgba(255,255,255, 0.5);
+    z-index: 2;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+main{
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    overflow-x: hidden;
+}
+img#skyline{
+    position:fixed;
+    bottom:0;
+    z-index: 1;
+    width: 100%;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 5px;
+    z-index:4;
+    width: 100%;
+}
+footer a{
+    color: white;
+    font-size: 10px;
+    margin-left: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+/*content*/
+.align-left{
+    text-align:left;
+}
+.position-relative{
+    position: relative;
+}
+h2{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+div.container{
+    width: 100%;
+    text-align: center;
+}
+div.content{
+    display: inline-block;
+    font-family: 'PT Sans', sans-serif;
+    border: 2px dotted white;
+    border-radius: 10px;
+    color:white;
+    margin: auto;
+    box-shadow: 0px 0px 30px rgba(253,235,113, 0.2);
+    padding: 10px 20px 20px 20px;
+    margin-bottom: 40px;
+}
+input.text{
+    width:200px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.text:focus{
+    outline:none;
+    box-shadow: 0px 0px 20px rgba(253,235,113, 0.5)
+}
+label{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    padding: 0px;
+    margin: 0px;
+}
+
+div.button{
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+}
+input.button-input{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 20px;
+    background: #F8D800;
+    padding: 3px 20px 5px 20px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 20px;
+    border: 0px solid #F8D800;
+    cursor: pointer;
+    outline: none;
+}
+.button input:active{
+    box-shadow: 0px 0px 20px rgba(253,235,113, 0.3);
+}
+div.set-width{
+    width: 600px;
+}
+p.error, p.message{
+    border-radius: 5px;
+    margin: 5px 0px 0px 0px;
+    margin-bottom: 6px;
+    padding: 0px 5px 0px 5px;
+}
+p.error{
+    background-color: #d63f28;
+}
+p.message{
+    background-color: #0e6d11;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color:white;
+}
+
+/*signed*/
+img#signature{
+    width:400px;
+    height:100px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+div#signed-links{
+    margin-top: 40px;
+    float: left;
+    margin-bottom: 20px;
+}
+div#img-container{
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+}
+
+/*petition*/
+canvas{
+    margin-top: 5px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/*navigation*/
+div#navi{
+    text-align: center;
+    top: 0;
+}
+nav{
+    width: 300px;
+    display: inline-block;
+}
+div#nav-box{
+    border-right: 2px dotted white;
+    border-left: 2px dotted white;
+    border-bottom: 2px dotted white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: 0px 0px 30px rgba(253,235,113, 0.2);
+}
+nav a{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0px 10px 0px 10px;
+}
+nav a:hover{
+    text-shadow: 0px 0px 20px rgba(255,255,255, 0.8);
+}
+
+div.parts-container{
+    width: 600px;
+    overflow :hidden;
+    display: block;
+}
+
+.parts{
+    display: inline-block;
+    width: 300px;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+
+#confirmPassword{
+    visibility: hidden;
+}
+#profileCheckbox{
+    vertical-align: middle;
+}
+
+#confirmPassword a{
+    font-size: 14px;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    h2{
+        font-size: 20px;
+    }
+    img#skyline{
+        position:fixed;
+        bottom:0;
+        z-index: 1;
+        height: 200px;
+        width: auto;
+    }
+    img#signature{
+        width: 280px;
+        height: auto;
+    }
+    div.content{
+        padding: 10px 5px 10px 5px;
+    }
+    div#img-container{
+        display:none;
+    }
+    div#signed-links{
+        margin-top: 20px;
+        float: none;
+    }
+    .align-left{
+        text-align: center;
+    }
+    div#signed-links a{
+        display: block;
+        padding: 0px;
+        margin: 0px;
+    }
+    p{
+        font-size: 18px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 415px), screen and (orientation: portrait){
+    main{
+        overflow-x: scroll;
+    }
+    h2{
+        font-size: 25px;
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    div.content{
+        margin-top: 60px;
+    }
+}
